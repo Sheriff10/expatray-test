@@ -35,6 +35,7 @@ src/
 └── middlewares/
     ├── auth.middleware.ts       # Authentication middleware
     └── admin-only.middleware.ts # Middleware for admin-only routes
+...
 ```
 
 ---
