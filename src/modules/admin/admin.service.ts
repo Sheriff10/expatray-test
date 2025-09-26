@@ -6,7 +6,11 @@ export const softDeleteUser = async (userId: string) => {
 };
 
 export const getAllUsers = async (limit: number = 10, offset: number = 0) => {
-  const users = await User.find().skip(offset).limit(limit).select("-password").sort({ createdAt: -1 });
+  const users = await User.find({ status: { $ne: "deleted" } })
+    .skip(offset)
+    .limit(limit)
+    .select("-password")
+    .sort({ createdAt: -1 });
 
   const total = await User.countDocuments();
 

@@ -1,12 +1,19 @@
 import express from "express";
 import secret from "./config/secret";
+import cors from "cors";
 import connectDB from "./config/db.config";
 import appRouter from "./routes";
 
 const app = express();
 
 app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 app.use(appRouter);
+
 const startServer = async () => {
   try {
     await connectDB();
