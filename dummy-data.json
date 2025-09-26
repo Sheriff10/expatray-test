@@ -1,0 +1,72 @@
+[
+  {
+    "name": "JohnDoe",
+    "email": "johndoe@example.com",
+    "password": "SecurePass123",
+    "city": "Lagos",
+    "country": "Nigeria"
+  },
+  {
+    "name": "AishaKhan",
+    "email": "aishakhan@mail.com",
+    "password": "Password99",
+    "city": "Toronto",
+    "country": "Canada"
+  },
+  {
+    "name": "CarlosMendez",
+    "email": "carlos.mendez@gmail.com",
+    "password": "CarL0sPass22",
+    "city": "Madrid",
+    "country": "Spain"
+  },
+  {
+    "name": "FatimaAli",
+    "email": "fatima.ali@example.com",
+    "password": "Fatima@123",
+    "city": "Dubai",
+    "country": "UAE"
+  },
+  {
+    "name": "LiamBrown",
+    "email": "liam.brown@yahoo.com",
+    "password": "L1amB2024",
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  {
+    "name": "SophiaLee",
+    "email": "sophia.lee@mail.com",
+    "password": "Sophia!456",
+    "city": "Seoul",
+    "country": "South Korea"
+  },
+  {
+    "name": "AhmedKareem",
+    "email": "ahmed.kareem@gmail.com",
+    "password": "AhmedKPass77",
+    "city": "Cairo",
+    "country": "Egypt"
+  },
+  {
+    "name": "MiaRoberts",
+    "email": "mia.roberts@example.org",
+    "password": "MiaR_2025",
+    "city": "London",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "EthanJones",
+    "email": "ethan.jones@gmail.com",
+    "password": "EthanJPass66",
+    "city": "New York",
+    "country": "USA"
+  },
+  {
+    "name": "ChinweOkoro",
+    "email": "chinwe.okoro@mail.com",
+    "password": "ChinwePass88",
+    "city": "Abuja",
+    "country": "Nigeria"
+  }
+]

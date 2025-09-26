@@ -3,6 +3,8 @@
 A RESTful API built with **Express** and **TypeScript** for managing user authentication and admin-level operations.  
 The project implements JWT-based authentication, user session handling, and role-based access control.
 
+### `dummy-data.json` contains test user data for registration api.
+
 ---
 
 ## Features
@@ -148,7 +150,3 @@ Once published, include the link below:
 | `npm start`     | Start the compiled production server    |
 
 ---
-
-## License
-
-This project is licensed under the **MIT License**.
