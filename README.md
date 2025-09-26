@@ -44,8 +44,8 @@ src/
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/Sheriff10/expatray-test.git
+cd expatray-test
 ```
 
 ### 2. Install dependencies
@@ -78,7 +78,7 @@ npm start
 The API will be available at:
 
 ```
-http://localhost:5000
+http://localhost:3000
 ```
 
 ---
@@ -134,9 +134,7 @@ Authorization: Bearer <your-token>
 API documentation can be published via Postman.  
 Once published, include the link below:
 
-```
 [API Documentation](https://ballistic-7944.postman.co/workspace/Team-Workspace~6504b1c0-ead1-4ae6-8e52-2d57f2c46d2d/collection/11580726-9313a624-2adf-480c-981f-ad2441bcb79c?action=share&creator=11580726&active-environment=11580726-00bf1836-20fc-43fa-ab9d-a2f09798d042)
-```
 
 ---
 
