@@ -6,6 +6,7 @@ The project implements JWT-based authentication, user session handling, and role
 ---
 
 ## Features
+
 - User registration and login with JSON Web Tokens (JWT)
 - Authenticated user session retrieval
 - User profile updates
@@ -16,6 +17,7 @@ The project implements JWT-based authentication, user session handling, and role
 ---
 
 ## Project Structure
+
 ```
 src/
 │
@@ -40,26 +42,30 @@ src/
 ## Installation
 
 ### 1. Clone the repository
+
 ```bash
 git clone <repository-url>
 cd <project-folder>
 ```
 
 ### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Environment variables
+
 Create a `.env` file in the root directory with the following variables:
 
 ```env
-PORT=5000
+PORT=3000
 MONGO_URI=<your-mongodb-uri>
 JWT_SECRET=<your-jwt-secret>
 ```
 
 ### 4. Run the application
+
 ```bash
 # Development mode
 npm run dev
@@ -70,6 +76,7 @@ npm start
 ```
 
 The API will be available at:
+
 ```
 http://localhost:5000
 ```
@@ -80,19 +87,19 @@ http://localhost:5000
 
 ### Public Routes
 
-| Method | Endpoint           | Description               |
-|--------|-------------------|---------------------------|
-| POST   | `/user/register`   | Register a new user       |
-| POST   | `/user/login`      | Authenticate a user       |
+| Method | Endpoint         | Description         |
+| ------ | ---------------- | ------------------- |
+| POST   | `/user/register` | Register a new user |
+| POST   | `/user/login`    | Authenticate a user |
 
 ---
 
 ### Authenticated User Routes
 
-| Method | Endpoint           | Description                        |
-|--------|-------------------|------------------------------------|
-| GET    | `/user/session`    | Retrieve current user session      |
-| PUT    | `/user/update`     | Update logged-in user information  |
+| Method | Endpoint        | Description                       |
+| ------ | --------------- | --------------------------------- |
+| GET    | `/user/session` | Retrieve current user session     |
+| PUT    | `/user/update`  | Update logged-in user information |
 
 > Requires `Authorization: Bearer <token>` header.
 
@@ -100,18 +107,19 @@ http://localhost:5000
 
 ### Admin Routes (Protected)
 
-| Method | Endpoint                | Description                  |
-|--------|------------------------|------------------------------|
-| GET    | `/admin/users`          | Retrieve all users           |
-| GET    | `/admin/users/:userId`  | Retrieve a single user       |
-| PUT    | `/admin/user/:userId`   | Update a user’s information  |
-| DELETE | `/admin/user/:userId`   | Delete a user                |
+| Method | Endpoint               | Description                 |
+| ------ | ---------------------- | --------------------------- |
+| GET    | `/admin/users`         | Retrieve all users          |
+| GET    | `/admin/users/:userId` | Retrieve a single user      |
+| PUT    | `/admin/user/:userId`  | Update a user’s information |
+| DELETE | `/admin/user/:userId`  | Delete a user               |
 
 > Requires admin role and `Authorization: Bearer <token>` header.
 
 ---
 
 ## Authentication
+
 All protected endpoints use JWT-based authentication.  
 Include the token in the request headers:
 
@@ -122,23 +130,26 @@ Authorization: Bearer <your-token>
 ---
 
 ## Documentation
+
 API documentation can be published via Postman.  
 Once published, include the link below:
 
 ```
-[API Documentation](<postman-documentation-link>)
+[API Documentation](https://ballistic-7944.postman.co/workspace/Team-Workspace~6504b1c0-ead1-4ae6-8e52-2d57f2c46d2d/collection/11580726-9313a624-2adf-480c-981f-ad2441bcb79c?action=share&creator=11580726&active-environment=11580726-00bf1836-20fc-43fa-ab9d-a2f09798d042)
 ```
 
 ---
 
 ## Scripts
-| Command       | Description                 |
-|---------------|-----------------------------|
-| `npm run dev` | Run the application in development mode |
-| `npm run build` | Compile TypeScript into JavaScript   |
-| `npm start`   | Start the compiled production server  |
+
+| Command         | Description                             |
+| --------------- | --------------------------------------- |
+| `npm run dev`   | Run the application in development mode |
+| `npm run build` | Compile TypeScript into JavaScript      |
+| `npm start`     | Start the compiled production server    |
 
 ---
 
 ## License
+
 This project is licensed under the **MIT License**.
